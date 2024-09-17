@@ -1,0 +1,46 @@
+.side-container{
+    display: flex;
+    position: relative;
+}
+.sideNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    width: 0;
+    padding-top: 40px;
+    background-color: black;
+    color:white;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: 1000;
+}
+.btn{
+    position: relative;
+    /* height: 100vh; */
+    /* background-color: black; */
+    z-index: 10001;
+    /* color:white; */
+}
+.sideNav>div{
+    text-align: center;
+    margin:10px 15px;
+}
+
+.open{
+    /* color:red; */
+    width: 120px;
+}
+.close{
+    width:0px;
+    /* color:yellow; */
+}
+
+.close ~ .main-content{
+    margin-left:20px;
+    transition: 0.5s;
+}
+.open ~ .main-content{
+    margin-left:120px;
+    transition: 0.5s;
+}

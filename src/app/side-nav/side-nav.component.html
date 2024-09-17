@@ -1,0 +1,20 @@
+<div class="side-container">
+    <div>
+        <button class="btn" (click)="menuSelect()"> MENU </button>
+    </div>
+    <!-- [ngClass]="{'open':isOpen,'close':!isOpen}" -->
+    <div class="sideNav" [ngClass]='{"open":isOpen,"close":!isOpen }'>
+        <div>Login</div>
+        <div>Menu 1</div>
+        <div>Menu 2</div>
+        <div>Menu 3</div>
+        <div>Menu 4</div>
+        <div>Logout</div>
+    </div>
+
+    <main class="main-content">
+        <section>
+            <app-main></app-main>
+        </section>
+    </main>
+</div>
